@@ -1,0 +1,25 @@
+type Query {
+    info: String!
+    user(id: ID!): User
+    users: [User!]!
+    feed: [Link!]!
+    getLink(id: ID!): Link
+}
+
+type Link {
+    id: ID!
+    description: String!
+    url: String!
+}
+
+type User {
+    id: ID!
+    name: String!
+}
+
+type Mutation {
+    post(url: String!, description: String!): Link!
+    createUser(name: String!): User!
+    updatePost(id: ID!, description: String!, url: String!): Link!
+    deletePost(id: ID!): Link
+} 
