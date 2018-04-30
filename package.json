@@ -4,6 +4,7 @@
   "description": "a node server that accomodates graphql server",
   "main": "index.js",
   "scripts": {
+    "start": "node ./index.js & graphql playground",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shaival Jason Chettipally",
