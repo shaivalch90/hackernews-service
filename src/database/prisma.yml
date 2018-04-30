@@ -1,0 +1,14 @@
+#Service Name will be part of the endpoint of Prisma API
+#service: hackernews-service
+
+#Deployment Stage, this will part of API Endpoint too.
+#stage: dev
+
+#points to file that holds data model
+datamodel: datamodel.graphql
+
+#Can only access API when providing JWTs(included in the authorization header of any HTTP Request) that are signed with this secret
+secret: p@55w0rd123
+#cluster: public-jadecarp-354/prisma-eu1
+
+endpoint: https://eu1.prisma.sh/public-jadecarp-354/hackernews-service/dev
