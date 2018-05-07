@@ -4,7 +4,7 @@ type Query {
     info: String!
     person(id: ID!): Person
     persons: [Person!]!
-    feed: [Link!]!
+    feed(filter: String): [Link!]!
     getLink(id: ID!): Link
 }
 
